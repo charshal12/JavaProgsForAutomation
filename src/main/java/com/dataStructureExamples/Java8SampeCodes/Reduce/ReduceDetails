@@ -1,0 +1,19 @@
+1. Method Signature
+
+1.1 Review the Stream.reduce() method signature:
+Stream.java
+T reduce(T identity, BinaryOperator<T> accumulator);
+
+IntStream.java
+int reduce(int identity, IntBinaryOperator op);
+
+LongStream.java
+long reduce(int identity, LongBinaryOperator op);
+
+identity = default or initial value.
+BinaryOperator = functional interface, take two values and produces a new value.
+
+1.2 if the identity argument is missing, there is no default or initial value, and it returns an optional.
+Stream.java
+Optional<T> reduce(BinaryOperator<T> accumulator);
+
