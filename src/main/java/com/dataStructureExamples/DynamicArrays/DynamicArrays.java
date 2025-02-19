@@ -1,7 +1,5 @@
 package com.dataStructureExamples.DynamicArrays;
 
-import java.sql.Array;
-
 public class DynamicArrays {
 
     int size;
@@ -9,11 +7,6 @@ public class DynamicArrays {
     Object[] array;
 
     public DynamicArrays(){
-        this.array = new Object[capacity];
-    }
-
-    public DynamicArrays(int capacity){
-        this.capacity = capacity;
         this.array = new Object[capacity];
     }
 
